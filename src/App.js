@@ -44,6 +44,17 @@ function App() {
     },
   ]);
 
+  const playerNames = [
+    'Kane Williamson',
+    'Steven Smith',
+    'Joe Root',
+    'Virat Kohli',
+    'Rishabh Pant',
+    'Rohit Sharma',
+    'David Warner',
+    'Ben Stokes'
+  ]
+  
   const [searchText, setSearchText] = useState("");
   const [darkMode, setDarkMode] = useState(false);
 
@@ -87,6 +98,8 @@ function App() {
           handleDeleteNOte={deleteNote}
         />
       </div>
+      <AutoComplete names={playerNames} />
+
     </div>
   );
 }
